@@ -1,0 +1,70 @@
+---
+layout: "markdown.njk"
+title: "Welcome"
+icon: "far fa-calendar-alt"
+---
+{%section "What is it?" "what" %}
+Moo ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec imperdiet turpis. Curabitur aliquet pulvinar ultrices. Etiam at posuere leo. Proin ultrices ex et dapibus feugiat <a href="#">link example</a> aenean purus leo, faucibus at elit vel, aliquet scelerisque dui. Etiam quis elit euismod, imperdiet augue sit amet, imperdiet odio. Aenean sem erat, hendrerit  eu gravida id, dignissim ut ante. Nam consequat porttitor libero euismod congue.   
+
+<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download PrettyDocs</a>
+
+{%endsection%}
+<section id="installation-section" class="doc-section">
+    <h2 class="section-title">Installation</h2>
+    <div id="step1"  class="section-block">
+        <h3 class="block-title">Step One</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+        </p>
+        <div class="code-block">
+            <h6>Default code example:</h6>
+            <p><code>bower install &lt;package&gt;</code></p>
+            <p><code>npm install &lt;package&gt;</code></p>
+        </div><!--//code-block-->
+    </div><!--//section-block-->
+    <div id="step2"  class="section-block">
+        <h3 class="block-title">Step Two</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        </p>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h6>Un-ordered list example</h6>
+                <ul class="list">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Aliquam tincidunt mauris.</li>
+                    <li>Ultricies eget vel aliquam libero.
+                        <ul>
+                            <li>Turpis pulvinar</li>
+                            <li>Feugiat scelerisque</li>
+                            <li>Ut tincidunt</li>
+                        </ul>
+                    </li>
+                    <li>Pellentesque habitant morbi.</li>
+                    <li>Praesent dapibus, neque id.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12">
+                <h6>Ordered list example</h6>
+                <ol class="list">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Aliquam tincidunt mauris.</li>
+                    <li>Ultricies eget vel aliquam libero.
+                        <ul>
+                            <li>Turpis pulvinar</li>
+                            <li>Feugiat scelerisque</li>
+                            <li>Ut tincidunt</li>
+                        </ul>
+                    </li>
+                    <li>Pellentesque habitant morbi.</li>
+                    <li>Praesent dapibus, neque id.</li>
+                </ol>
+            </div>
+        </div><!--//row-->
+    </div><!--//section-block-->
+    <div id="step3"  class="section-block">
+        <h3 class="block-title">Step Three</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+        </p>
+    </div><!--//section-block-->
+</section><!--//doc-section-->
+
+
