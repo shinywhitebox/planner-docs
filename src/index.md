@@ -1,14 +1,16 @@
 ---
-layout: "markdown.njk"
 title: "Welcome"
-icon: "far fa-calendar-alt"
+tags: 
+    - docs
 ---
-{%section "What is it?" "what" %}
+{%section "What is it?" "what-is-it" %}
 Moo ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec imperdiet turpis. Curabitur aliquet pulvinar ultrices. Etiam at posuere leo. Proin ultrices ex et dapibus feugiat <a href="#">link example</a> aenean purus leo, faucibus at elit vel, aliquet scelerisque dui. Etiam quis elit euismod, imperdiet augue sit amet, imperdiet odio. Aenean sem erat, hendrerit  eu gravida id, dignissim ut ante. Nam consequat porttitor libero euismod congue.   
 
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download PrettyDocs</a>
+<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/" class="btn btn-orange" target="_blank"><i class="fas fa-download"></i> Download PrettyDocs</a>
 
 {%endsection%}
+
+# Installation
 <section id="installation-section" class="doc-section">
     <h2 class="section-title">Installation</h2>
     <div id="step1"  class="section-block">

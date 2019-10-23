@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Introduction",
+        "items": [
+            {
+                "title": "What is it?"
+            },
+            {
+                "title": "Intended use"
+            }
+        ]
+    },
+    {
+        "title": "Installation"
+    },
+    {
+        "title": "Concepts"
+    },
+    {
+        "title": "Advanced"
+    },
+    {
+        "title": "Examples / Howto"
+    }
+]

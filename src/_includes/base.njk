@@ -1,3 +1,13 @@
+---
+menuSortOrder:
+    - welcome
+    - introduction
+    - installation
+    - concepts
+    - advanced
+    - howto
+    - examples
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +33,7 @@
     
 </head> 
 
-<body class="body-green">
+<body class="body-orange">
     <div class="page-wrapper">
 
     <!-- ******Header****** -->
@@ -33,7 +43,7 @@
                 <h1 class="logo">
                     <a href="index.html">
                         <span aria-hidden="true" class="icon_documents_alt icon"></span>
-                        <span class="text-highlight">{{app.name}}</span><span class="text-bold">Docs</span>
+                        <span class="text-highlight">{{app.name}}</span><span class="text-bold">  Docs</span>
                     </a>
                 </h1>
                 
@@ -68,7 +78,9 @@
                 <div class="doc-body row">
 
                 {{ content | safe }}
+
                 {% include "menu.njk" %}
+                {# {% include "menu2.njk" %} #}
 
                 </div><!--//doc-body-->              
             </div><!--//container-->
