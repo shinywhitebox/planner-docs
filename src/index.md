@@ -3,70 +3,31 @@ title: "Welcome"
 tags: 
     - docs
 ---
-{%section "What is it?" "what-is-it" %}
-Moo ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec imperdiet turpis. Curabitur aliquet pulvinar ultrices. Etiam at posuere leo. Proin ultrices ex et dapibus feugiat <a href="#">link example</a> aenean purus leo, faucibus at elit vel, aliquet scelerisque dui. Etiam quis elit euismod, imperdiet augue sit amet, imperdiet odio. Aenean sem erat, hendrerit  eu gravida id, dignissim ut ante. Nam consequat porttitor libero euismod congue.   
+{%section "What is it?"%}
+{{app.name}} is a tool to schedule people across recurring events, e.g: voluteer band rosters, dynamic teams serving every week.
 
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/" class="btn btn-orange" target="_blank"><i class="fas fa-download"></i> Download PrettyDocs</a>
+In these scenarios you have a number of people, able to do perform one or more roles, and you need a way to come up with a roster / schedule / plan for those people for, say, three months.
 
+{{app.name}}, in a nutshell, will let you put those people into various roles, defines rules, vacataion times and so forth and come up with a fair plan out the other end. In short it takes all the pain away from creating rosters in google sheets / excel.
 {%endsection%}
 
-# Installation
-<section id="installation-section" class="doc-section">
-    <h2 class="section-title">Installation</h2>
-    <div id="step1"  class="section-block">
-        <h3 class="block-title">Step One</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-        </p>
-        <div class="code-block">
-            <h6>Default code example:</h6>
-            <p><code>bower install &lt;package&gt;</code></p>
-            <p><code>npm install &lt;package&gt;</code></p>
-        </div><!--//code-block-->
-    </div><!--//section-block-->
-    <div id="step2"  class="section-block">
-        <h3 class="block-title">Step Two</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        </p>
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <h6>Un-ordered list example</h6>
-                <ul class="list">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Aliquam tincidunt mauris.</li>
-                    <li>Ultricies eget vel aliquam libero.
-                        <ul>
-                            <li>Turpis pulvinar</li>
-                            <li>Feugiat scelerisque</li>
-                            <li>Ut tincidunt</li>
-                        </ul>
-                    </li>
-                    <li>Pellentesque habitant morbi.</li>
-                    <li>Praesent dapibus, neque id.</li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-12">
-                <h6>Ordered list example</h6>
-                <ol class="list">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Aliquam tincidunt mauris.</li>
-                    <li>Ultricies eget vel aliquam libero.
-                        <ul>
-                            <li>Turpis pulvinar</li>
-                            <li>Feugiat scelerisque</li>
-                            <li>Ut tincidunt</li>
-                        </ul>
-                    </li>
-                    <li>Pellentesque habitant morbi.</li>
-                    <li>Praesent dapibus, neque id.</li>
-                </ol>
-            </div>
-        </div><!--//row-->
-    </div><!--//section-block-->
-    <div id="step3"  class="section-block">
-        <h3 class="block-title">Step Three</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-        </p>
-    </div><!--//section-block-->
-</section><!--//doc-section-->
 
+{%section "How this manual is organized" %}
+The manual is split into three *main* parts.
 
+1. Installation
+1. General concepts
+1. Examples
+
+While other sections exist; the above three are the main ones that'll be useful in getting you up to speed and understanding how the app works.
+
+It's recommended that you read the Concepts guide, as this will set you up to understand how we've approached solving the problem of creating a roster. It'll also familiarise you with terms that'll be used throughout the rest of this manual.
+{%endsection%}
+
+{%section "Getting further help" %}
+At present the app is in beta, and made freely available to anyone that wants to use it.
+
+We've tried to put as much useful information into the docs such that you should only need to engage paid support if you're really stuck or want to implement a custom scenario. 
+
+One-on-one support via our professional services.  Please get in touch with [shinywhitebox](mailto:support@shinywhitebox.com) and we can discuss your requirements and how to best help you solve them.
+{%endsection%}

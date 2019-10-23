@@ -3,8 +3,6 @@ const slugify = require('slugify');
 const moment = require('moment');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
-const pluginTOC = require('eleventy-plugin-nesting-toc');
-const markdownItAnchor = require('markdown-it-anchor');
 
 module.exports = function (eleventyConfig) {
 
@@ -25,23 +23,16 @@ module.exports = function (eleventyConfig) {
         rightDelimiter: '}',
         allowedAttributes: []  // empty array = all attributes are allowed
     });
-    mdInstance.use(markdownItAnchor, {});
 
     eleventyConfig.setLibrary("md", mdInstance);
-
-    eleventyConfig.addPlugin(pluginTOC, {
-        tags: ["h1", "h2"],
-        wrapper: 'nav',
-        wrapperClass: 'nav doc-menu flex-column sticky'
-    });
 
     eleventyConfig.addFilter("sortMenu", function(collection, sortOrder) {
 		if(!sortOrder) {
 			return collection;
 		}
 
-        console.log(`Collection is: ` + collection);
-        console.log(`Wanted order is: ` + sortOrder);
+        // console.log(`** Collection is: ` + collection);
+        // console.log(`** Wanted order is: ` + sortOrder);
 
         function path_to_name(path) {
             return String(slugify(path)).toLowerCase();
@@ -50,7 +41,8 @@ module.exports = function (eleventyConfig) {
 		return collection.sort(function(a, b) {
             let a_title = path_to_name(a.data.title);
             let b_title = path_to_name(b.data.title);
-            console.log(`check: ${a.url}, at: ${a_title}, bt: ${b_title}`);
+            // console.log(`Path: ${a.url}`);
+            // console.log(`check: ${a.url}, at: ${a_title}, bt: ${b_title}`);
 
             let firstIndex = sortOrder.findIndex(function(a) { return String(a_title).startsWith(a); });
 			let secondIndex = sortOrder.findIndex(function(b) { return String(b_title).startsWith(b); });

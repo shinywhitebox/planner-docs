@@ -1,14 +1,14 @@
 <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
     <div id="doc-nav" class="doc-nav">
         <nav id="doc-menu" class="nav doc-menu flex-column sticky">
-        {% for item in collections.docs | sortMenu(menuSortOrder) %}
-                <a class="nav-link" href="{{item.url}}">{{item.data.title}}</a>
-                {% for subitem in collections[item.data.submenuSlug] | sortMenu(item.data.submenuOrder) %}
+        {%- for item in collections.docs | sortMenu(menuSortOrder) %}
+                <a  {% if page.url == item.data.page.url %} class="nav-link active"{%- else %} class="nav-link"{%- endif %} href="{{item.url}}">{{item.data.title}}</a>
                     <nav class="doc-sub-menu nav flex-column">
-                        <a class="nav-link" href="{{submenu.url}}">{{subitem.data.title}}</a>
+                    {%- for subitem in collections[item.data.submenuSlug] | sortMenu(item.data.submenuOrder) %}
+                        <a class="nav-link" href="{{subitem.url}}">{{subitem.data.title}}</a>
+                    {%- endfor %}
                     </nav>
-                {% endfor %}
-        {% endfor %}
+        {%- endfor %}
         </nav>
     </div>
 </div>

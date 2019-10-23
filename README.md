@@ -3,16 +3,43 @@
 - Serve with "npm run serve"
 - All src in "src", with site being generated to "_site".
 
-## Generating the TOC
-
 ### Goals
 - Automatic, from content
 - Ordered how I want (sections and pages within those sections)
 - Ability to use markdown
 - Only 2 levels, custom template for TOC generation
 
-## Custom shortcodes
-section: creates a section header, wraps content
+## How it's put together
+- markdown-it-attrs is in, so you can write things like {.foo} to add class="foo" to the output.
+
+- TOC is built using two levels, and tags on the documents
+    - Top level docs have:
+        - a 'docs' tag.
+        - a 'submenuSlug' tag, eg:
+
+            submenuSlug: docs-concepts
+
+    - Sublevel docs have a 'submenuSlug' tag.
+
+# TOC & Page Ordering
+Partial slugs (must match start, e.g: like page-slug.startsWith(thing))
+
+The page slug is lowercased. examples:
+- Advanced = advanced
+- global_vs_plans = global-vs-plans
+
+You need only specify the start match. So a list containing:
+- advanced
+- global
+
+would match global-vs-plans, global-plans, and also global.
+
+- Toplevel ordering is done via the 'menuSortOrder' variable on main.njk
+- Sublevel ordering is defined per page, e.g: see concepts.md
 
 # Eleventy plugins
 Markdown attributes: https://github.com/arve0/markdown-it-attrs
+
+## Custom shortcodes
+section: creates a section header, wraps content
+
