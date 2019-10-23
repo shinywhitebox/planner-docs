@@ -6,13 +6,17 @@ tags:
 {%section "What is it?"%}
 {{app.name}} is a tool to schedule people across recurring events, e.g: voluteer band rosters, dynamic teams serving every week.
 
-In these scenarios you have a number of people, able to do perform one or more roles, and you need a way to come up with a roster / schedule / plan for those people for, say, three months.
+In these scenarios you have a number of people, able to do perform one or more roles, with dynamic and varying availability and you need a way to come up with a roster / schedule / plan for those people for, say, three months. 
+
+If you've ever tried to do this for 30 odd people. You know how much fun it isn't.
 
 {{app.name}}, in a nutshell, will let you put those people into various roles, defines rules, vacataion times and so forth and come up with a fair plan out the other end. In short it takes all the pain away from creating rosters in google sheets / excel.
+
+### Awesome sauce
+The *awesome* part of it is that the *next* time you need another similar roster - just duplicate the one you did before, and you're almost done. People themselves can add their own unavailablity, and the plan updates automatically. Once you're happy? Publish it and lock it from editing. 
 {%endsection%}
 
-
-{%section "How this manual is organized" %}
+{%section "What should I read first?" %}
 The manual is split into three *main* parts.
 
 1. Installation
@@ -21,7 +25,7 @@ The manual is split into three *main* parts.
 
 While other sections exist; the above three are the main ones that'll be useful in getting you up to speed and understanding how the app works.
 
-It's recommended that you read the Concepts guide, as this will set you up to understand how we've approached solving the problem of creating a roster. It'll also familiarise you with terms that'll be used throughout the rest of this manual.
+It's recommended that you read the [Concepts](/manual/concepts/) guide, as this will set you up to understand how we've approached solving the problem of creating a roster. It'll also familiarise you with terms that'll be used throughout the rest of this manual.
 {%endsection%}
 
 {%section "Getting further help" %}

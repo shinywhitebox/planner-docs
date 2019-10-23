@@ -5,7 +5,7 @@
                 <a  {% if page.url == item.data.page.url %} class="nav-link active"{%- else %} class="nav-link"{%- endif %} href="{{item.url}}">{{item.data.title}}</a>
                     <nav class="doc-sub-menu nav flex-column">
                     {%- for subitem in collections[item.data.submenuSlug] | sortMenu(item.data.submenuOrder) %}
-                        <a class="nav-link" href="{{subitem.url}}">{{subitem.data.title}}</a>
+                        <a class="nav-link {% if page.url == subitem.data.page.url %}active{%endif%}" href="{{subitem.url}}">{{subitem.data.title}}</a>
                     {%- endfor %}
                     </nav>
         {%- endfor %}

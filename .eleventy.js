@@ -26,10 +26,10 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.setLibrary("md", mdInstance);
 
-    eleventyConfig.addFilter("sortMenu", function(collection, sortOrder) {
-		if(!sortOrder) {
-			return collection;
-		}
+    eleventyConfig.addFilter("sortMenu", function (collection, sortOrder) {
+        if (!sortOrder) {
+            return collection;
+        }
 
         // console.log(`** Collection is: ` + collection);
         // console.log(`** Wanted order is: ` + sortOrder);
@@ -38,24 +38,24 @@ module.exports = function (eleventyConfig) {
             return String(slugify(path)).toLowerCase();
         }
 
-		return collection.sort(function(a, b) {
+        return collection.sort(function (a, b) {
             let a_title = path_to_name(a.data.title);
             let b_title = path_to_name(b.data.title);
             // console.log(`Path: ${a.url}`);
             // console.log(`check: ${a.url}, at: ${a_title}, bt: ${b_title}`);
 
-            let firstIndex = sortOrder.findIndex(function(a) { return String(a_title).startsWith(a); });
-			let secondIndex = sortOrder.findIndex(function(b) { return String(b_title).startsWith(b); });
+            let firstIndex = sortOrder.findIndex(function (a) { return String(a_title).startsWith(a); });
+            let secondIndex = sortOrder.findIndex(function (b) { return String(b_title).startsWith(b); });
 
-			if( firstIndex === -1 ) return -1;
-			if( secondIndex === -1 ) return 1;
+            if (firstIndex === -1) return -1;
+            if (secondIndex === -1) return 1;
 
-			return firstIndex - secondIndex;
-		});
+            return firstIndex - secondIndex;
+        });
     });
 
-    eleventyConfig.addCollection("topleveldocs", function(collection) {
-       
+    eleventyConfig.addCollection("topleveldocs", function (collection) {
+
         // console.log(`All collections: `);
         // for(let c of collection.getAll()) {
         //     console.log(`All collections: ` + safeJsonStringify(Object.getOwnPropertyNames(c)));
@@ -63,18 +63,47 @@ module.exports = function (eleventyConfig) {
         // }
 
         return collection.getFilteredByGlob("**/*.md")
-        .filter(function(item) {
-            if(!item.data.tags) {
-                return false;
-            }
-            // console.log(`${item.toString()}`);
+            .filter(function (item) {
+                if (!item.data.tags) {
+                    return false;
+                }
+                // console.log(`${item.toString()}`);
 
-            return item.data.tags.indexOf("docs") !== -1;
-        });
+                return item.data.tags.indexOf("docs") !== -1;
+            });
     })
-    
-    eleventyConfig.addPairedShortcode('section', function (content, title, id) {
+
+    eleventyConfig.addShortcode('tip', function(title, text) {
         return `
+<div class="callout-block callout-success">
+    <div class="icon-holder">
+        <i class="fas fa-thumbs-up"></i>
+    </div>
+    <div class="content">
+        <h4 class="callout-title">${title}</h4>
+        <p>${text}</p>
+    </div>
+</div>
+`;
+    });
+
+    eleventyConfig.addShortcode('warning', function(title, text) {
+        return `
+<div class="callout-block callout-warning">
+    <div class="icon-holder">
+        <i class="fas fa-bug"></i>
+    </div>
+    <div class="content">
+        <h4 class="callout-title">${title}</h4>
+        <p>${text}</p>
+    </div>
+</div>
+`;
+    });
+
+    eleventyConfig.addPairedShortcode('section', function (content, title, id) {
+        if (title) {
+            return `
 <section id="${id}" class="doc-section">
 <h2 class="section-title">${title}</h2>
 <div class="section-block">
@@ -82,6 +111,14 @@ ${content}
 </div>
 </section>
 `;
+        } else {
+            return `
+<section id="${id}" class="doc-section">
+<div class="section-block">
+${content}
+</section>
+`;
+        }
     });
 
     eleventyConfig.addPassthroughCopy("assets");
