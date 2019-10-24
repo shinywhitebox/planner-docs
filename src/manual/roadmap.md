@@ -5,7 +5,10 @@ tags:
 ---
 # TODO
 
-Well, I was going to write stuff here.
+- The getting started video 
+
+### Callouts
 
 {% tip "Woohoo" "This is some amazing tip" %}
-{% warning "Wait" "This is an important point" %}
+{% info "so" "You might find this interesting to know" %}
+{% warning "Hold Up SIr" "This is an important point" %}

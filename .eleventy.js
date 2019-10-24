@@ -87,6 +87,20 @@ module.exports = function (eleventyConfig) {
 `;
     });
 
+    eleventyConfig.addShortcode('info', function(title, text) {
+        return `
+<div class="callout-block callout-info">
+    <div class="icon-holder">
+        <i class="fas fa-info-circle"></i>
+    </div>
+    <div class="content">
+        <h4 class="callout-title">${title}</h4>
+        <p>${text}</p>
+    </div>
+</div>
+`;
+    });
+
     eleventyConfig.addShortcode('warning', function(title, text) {
         return `
 <div class="callout-block callout-warning">
