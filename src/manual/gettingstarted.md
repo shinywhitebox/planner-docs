@@ -7,7 +7,10 @@ tags:
 
 This is far far easier to explain with video, so lets do that.
 
--- to be done
+{%video "https://www.youtube.com/embed/e2gv_UM6vMA" %}
+
+
+<p>
 
 The main steps are summarised below, but the video is the goto place for learning here:
 - Create an account
