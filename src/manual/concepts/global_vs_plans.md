@@ -3,7 +3,7 @@ title: "Global vs Per Plan Data"
 tags: 
     - docs-concepts
 ---
-{%section "Data is split" %}
+{%section "Global Data & Plan Data" %}
 
 Data is split into two parts in {{app.name}}.
 

@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addFilter('date', date => {
         return moment(date).format('LL');
-    })
+    });
 
     let mdOptions = {
         html: true,
@@ -38,14 +38,36 @@ module.exports = function (eleventyConfig) {
             return String(slugify(path)).toLowerCase();
         }
 
+        function getAllIndexes(arr, val) {
+            let maxIndex = -1;
+            for(let i = 0; i < sortOrder.length; i++) {
+                let index = arr.indexOf(val);
+                if(index !== -1) {
+                    maxIndex = Math.max(maxIndex, index);
+                }
+            }
+            return maxIndex;
+        }
+
         return collection.sort(function (a, b) {
-            let a_title = path_to_name(a.data.title);
-            let b_title = path_to_name(b.data.title);
+            let a_slug = path_to_name(a.data.title);
+            let b_slug = path_to_name(b.data.title);
             // console.log(`Path: ${a.url}`);
             // console.log(`check: ${a.url}, at: ${a_title}, bt: ${b_title}`);
 
-            let firstIndex = sortOrder.findIndex(function (a) { return String(a_title).startsWith(a); });
-            let secondIndex = sortOrder.findIndex(function (b) { return String(b_title).startsWith(b); });
+            /*
+            Sort by the 'sortOrder' - a list of slugified title names in wanted order.
+            - If we prefix match any, then:
+            - match length matters. if we have [roles, plans, roles-in-plans]
+            This means we want roles-in-plans AFTER plans
+            If the input is [roles, roles-in-plans, plans]
+
+            roles-in-plans will match 'roles' as well as 'roles-in-plans'
+            We want to find the index of the LONGEST match. That way, we find the most specific.
+             */
+
+            let firstIndex = getAllIndexes(sortOrder, a_slug);
+            let secondIndex = getAllIndexes(sortOrder, b_slug);
 
             if (firstIndex === -1) return -1;
             if (secondIndex === -1) return 1;
@@ -73,14 +95,14 @@ module.exports = function (eleventyConfig) {
             });
     });
 
-    eleventyConfig.addShortcode('video', function(url) {
-       return `
+    eleventyConfig.addShortcode('video', function (url) {
+        return `
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="${url}" frameborder="0" allowfullscreen=""></iframe>
-</div>`;
+</div><p></p>`;
     });
 
-    eleventyConfig.addShortcode('tip', function(title, text) {
+    eleventyConfig.addShortcode('tip', function (title, text) {
         return `
 <div class="callout-block callout-success">
     <div class="icon-holder">
@@ -94,7 +116,7 @@ module.exports = function (eleventyConfig) {
 `;
     });
 
-    eleventyConfig.addShortcode('info', function(title, text) {
+    eleventyConfig.addShortcode('info', function (title, text) {
         return `
 <div class="callout-block callout-info">
     <div class="icon-holder">
@@ -108,7 +130,7 @@ module.exports = function (eleventyConfig) {
 `;
     });
 
-    eleventyConfig.addShortcode('warning', function(title, text) {
+    eleventyConfig.addShortcode('warning', function (title, text) {
         return `
 <div class="callout-block callout-warning">
     <div class="icon-holder">
@@ -153,7 +175,7 @@ ${content}
             input: "src",
             output: "_site",
             includes: "_includes",
-            data: "_data",
+            data: "_data"
         }
-    }
-}
+    };
+};
