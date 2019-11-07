@@ -17,9 +17,6 @@ The split exists so that if people are in multiple plans, you don't have to dupl
 {%section "Global Data" %}
 The following things are global:
 
-1. People
-1. Roles
-
 #### People
 As you'd imagine, each person defines someone that can be placed into a plan. Each person has defined:
 - Name

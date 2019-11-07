@@ -36,7 +36,7 @@ The general idea is that you define a *Plan* to represent a recurring event (lik
 
 #### Role ordering within a Plan
 
-Ordering is something we will deal with later, but you should know that each plan has a default ordering.  The ordering can be changed in *Menu | Plans | Plan | Roles & Ordering * 
+Ordering is something we will deal with later, but you should know that each plan has a default ordering.  The ordering can be changed in *Menu | Plans | Plan | Roles & Ordering* 
 
 
 {%endsection%}
