@@ -95,6 +95,10 @@ module.exports = function (eleventyConfig) {
             });
     });
 
+    eleventyConfig.addShortcode('link', function (text, url) {
+        return '<a href="/manual/' + url + '">' + text + "</a>";
+    });
+
     eleventyConfig.addShortcode('video', function (url) {
         return `
 <div class="embed-responsive embed-responsive-16by9">
