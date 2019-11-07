@@ -29,11 +29,9 @@ You can access the app via your browser, here: {{app.appurl}}
 {%section "Your Account" %}
 To use the app, you need to create an account.  You can do that either via the app [or browser]({{app.appur})). The sign up process will send am email to verify your email address.
 
-{%video url="https://www.youtube.com/embed/V11aZsHhTu8" %}
-
-</div>
+{%video "https://www.youtube.com/embed/V11aZsHhTu8" %}
 
 ### Privacy 
 Your account information can only be changed by you. It can be seen by other members of your organization (i.e: anyone else that your have invited to look at your plans)
 
-{%endsection %}
+{%endsection%}
