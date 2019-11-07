@@ -1,3 +1,6 @@
+# Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/485158ec-68ae-42c3-b5ad-31dc02d3c8e1/deploy-status)](https://app.netlify.com/sites/planner-docs/deploys)
+
 # General
 - Eleventy
 - Serve with "npm run serve"
@@ -10,6 +13,9 @@
 - Only 2 levels, custom template for TOC generation
 
 ## How it's put together
+- Using PrettyDocs as a base:
+    - https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/
+    
 - markdown-it-attrs is in, so you can write things like {.foo} to add class="foo" to the output.
 
 - TOC is built using two levels, and tags on the documents

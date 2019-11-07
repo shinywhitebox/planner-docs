@@ -71,7 +71,14 @@ module.exports = function (eleventyConfig) {
 
                 return item.data.tags.indexOf("docs") !== -1;
             });
-    })
+    });
+
+    eleventyConfig.addShortcode('video', function(url) {
+       return `
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="${url}" frameborder="0" allowfullscreen=""></iframe>
+</div>`;
+    });
 
     eleventyConfig.addShortcode('tip', function(title, text) {
         return `
