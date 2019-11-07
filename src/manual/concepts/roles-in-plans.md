@@ -18,7 +18,7 @@ To make additional roles available in a plan, you edit the plan and click the *R
 
 From here you can add roles that are not in the plan.
 
-{%video "https://www.youtube.com/embed/-KPl7tZv9RU" %}
+{%video "https://www.youtube.com/embed/fje3PQUzy-s" %}
 
 {%tip "Add roles to 'global roles' first" "Roles can be added only if they exist in the global data. Add them to the global roles before trying to add them into a plan" %}
 
@@ -32,7 +32,7 @@ After that, it's simple:
 - Click the checkboxes next to the people you want to add into this plan
 - Click 'Done'
 
-{%video "https://www.youtube.com/embed/QJVfY4Rgixg" %}
+{%video "https://www.youtube.com/embed/TD_tWTgjt4E" %}
 
 
 {%endsection%}
