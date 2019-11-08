@@ -4,7 +4,7 @@ tags:
     - docs
 ---
 {%section "What is it?"%}
-{{app.name}} is a tool to schedule people across recurring events, e.g: voluteer band rosters, dynamic teams serving every week or maintenance rosters for buildings.
+{{app.name}} is a tool to schedule people across recurring events, e.g: volunteer band rosters, dynamic teams serving every week or maintenance rosters for buildings.
 
 In these scenarios you have a number of people, able to do perform one or more roles, with dynamic and varying availability, and you need a way to come up with a roster / schedule / plan for those people for, say, three months. 
 
