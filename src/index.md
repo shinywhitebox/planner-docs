@@ -10,7 +10,7 @@ In these scenarios you have a number of people, able to do perform one or more r
 
 {%info "Lets avoid pain" "If you've ever tried to create a roster in sheets/excel for 30 odd people. You know how much fun it <b>isn't</b>."%}
 
-{{app.name}}, in a nutshell, will let you put those people into various roles, defines rules, vacataion times and so forth and come up with a fair plan out the other end. In short it takes all the pain away from creating rosters in google sheets / excel.
+{{app.name}}, in a nutshell, will let you put those people into various roles, defines rules, vacation times and so forth and come up with a fair plan out the other end. In short it takes all the pain away from creating rosters in google sheets / excel.
 
 ### Awesome sauce
 Aside from the help you get creating your *first* plan, the super-awesome-sauce is when you go to create your *next plan*.
