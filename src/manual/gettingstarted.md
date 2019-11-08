@@ -1,9 +1,9 @@
 ---
-title: "Getting Started"
+title: "Your first plan"
 tags: 
     - docs-installation
 ---
-{%section "Your first plan"%}
+{%section "Quick introduction"%}
 
 This is far far easier to explain with video, so lets do that.
 
