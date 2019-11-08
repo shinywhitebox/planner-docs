@@ -4,4 +4,7 @@ tags:
     - docs
 ---
 # Advanced Concepts
-{{app.name}} lets you do more
+
+- TODO
+    - How layout ordering can affect the plan generation
+    - Using role weighting to achieve more of a balance

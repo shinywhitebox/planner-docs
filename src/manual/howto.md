@@ -5,4 +5,9 @@ tags:
 ---
 # Howto
 
-Show how to do common things
+- TODO:
+    - Publish a plan
+    - Change your organization name
+    - Invite others
+    - Deleting things (swipe left)
+    - Duplicating 

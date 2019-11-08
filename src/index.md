@@ -13,7 +13,9 @@ In these scenarios you have a number of people, able to do perform one or more r
 {{app.name}}, in a nutshell, will let you put those people into various roles, defines rules, vacataion times and so forth and come up with a fair plan out the other end. In short it takes all the pain away from creating rosters in google sheets / excel.
 
 ### Awesome sauce
-The *awesome* part of it is that the *next* time you need another similar roster - just duplicate the previous one, and you're done. People themselves can add their own unavailablity & preferences, and the plan is updated automatically. Once you're happy? Publish it and lock it from editing. 
+Aside from the help you get creating your *first* plan, the super-awesome-sauce is when you go to create your *next plan*.
+
+For the next plan all you have to do is duplicate the previous, set any unavailability, and you're done. You can let people themselves add their own unavailablity if you like, and the plan is updated automatically. Once you're happy with it, *Publish it* and lock it from editing. 
 {%endsection%}
 
 {%section "What should I read first?" %}

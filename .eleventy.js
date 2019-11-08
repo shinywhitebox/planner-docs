@@ -38,12 +38,23 @@ module.exports = function (eleventyConfig) {
             return String(slugify(path)).toLowerCase();
         }
 
-        function getAllIndexes(arr, val) {
+        function findBestMatch(someArray, value) {
             let maxIndex = -1;
-            for(let i = 0; i < sortOrder.length; i++) {
-                let index = arr.indexOf(val);
-                if(index !== -1) {
-                    maxIndex = Math.max(maxIndex, index);
+            let lengthOfMatch = 0;
+
+            // Find the longest/latest match.
+            // the value will always be a sluggified full page title.
+            // someArray will contain possible partial matches.
+            // we want to find the index with the longest match
+
+            for (let index = 0; index < someArray.length; index++) {
+                let itemAtThisIndex = someArray[index];
+                let matches = value.startsWith(itemAtThisIndex);
+                if (matches) {
+                    if (itemAtThisIndex.length > lengthOfMatch) {
+                        maxIndex = Math.max(maxIndex, index);
+                        lengthOfMatch = itemAtThisIndex.length;
+                    }
                 }
             }
             return maxIndex;
@@ -52,8 +63,6 @@ module.exports = function (eleventyConfig) {
         return collection.sort(function (a, b) {
             let a_slug = path_to_name(a.data.title);
             let b_slug = path_to_name(b.data.title);
-            // console.log(`Path: ${a.url}`);
-            // console.log(`check: ${a.url}, at: ${a_title}, bt: ${b_title}`);
 
             /*
             Sort by the 'sortOrder' - a list of slugified title names in wanted order.
@@ -66,13 +75,20 @@ module.exports = function (eleventyConfig) {
             We want to find the index of the LONGEST match. That way, we find the most specific.
              */
 
-            let firstIndex = getAllIndexes(sortOrder, a_slug);
-            let secondIndex = getAllIndexes(sortOrder, b_slug);
+            let firstIndex = findBestMatch(sortOrder, a_slug);
+            let secondIndex = findBestMatch(sortOrder, b_slug);
 
-            if (firstIndex === -1) return -1;
-            if (secondIndex === -1) return 1;
+            let msg = `check: ${a.url}, a: ${a_slug} (@ ${firstIndex}), b: ${b_slug} (@ ${secondIndex})`;
 
-            return firstIndex - secondIndex;
+            // can't find it? push it to bottom
+            if (firstIndex === -1 || secondIndex === -1) {
+                console.log(`${msg} - can't find one of them. Using natural sort`);
+                return 1;
+            }
+
+            let number = firstIndex - secondIndex;
+            // console.log(`${msg} - return value ${number}...`);
+            return number;
         });
     });
 

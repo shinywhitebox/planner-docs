@@ -37,6 +37,9 @@ A plan has its own local copy of the roles and ordering. When a plan is created 
 
 Duplicate an existing plan: Swipe *right* on the plan. Press the *duplicate* button that appears.
 
+A new plan will be created that follows on from the previous. By default, it will span three (3) months.
+
+
 ### Deleting a plan
 
 You can delete a plan by swiping left, and clicking the 'Delete' button that appears.

@@ -7,9 +7,9 @@ submenuOrder:
     - plans
     - roles-in-plans
     - rules
+    - publishing
     - availability
     - teams
-    - publishing
     - inviting
 submenuSlug: docs-concepts
 tags: 

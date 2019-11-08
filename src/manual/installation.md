@@ -3,6 +3,9 @@ title: "Installation"
 submenuSlug: docs-installation
 tags: 
     - docs
+submenuOrder:
+    - your
+    - tour
 ---
 
 {%section "Getting the app" %}
@@ -27,7 +30,7 @@ You can access the app via your browser, here: {{app.appurl}}
 {%endsection%}
 
 {%section "Your Account" %}
-To use the app, you need to create an account.  You can do that either via the app [or browser]({{app.appur})). The sign up process will send am email to verify your email address.
+To use the app, you need to create an account.  You can do that either via the app [or browser]({{app.appur})). The sign up process will send an email to verify your email address.
 
 {%video "https://www.youtube.com/embed/V11aZsHhTu8" %}
 
