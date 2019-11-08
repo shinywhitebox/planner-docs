@@ -22,3 +22,5 @@ Unavailability can be set using single values, or date ranges.
 The planner will not place a person into a role if they are unavailable on that day.  
 
 {%endsection%}
+
+{%info "Defined Globally" "Currently a persons availability & unavailability are defined globally on the person. This means that at this stage you cannot have differing availability on a per-plan basis." %}

@@ -9,7 +9,7 @@ When editing a *plan*, you can only assign people to roles that have been added 
 
 Once the roles exist in the plan, you can assign people to various roles that make sense.
 
-Example: I could be assigned two roles: Saxophone and Sound, which would mean I would alternate between those two roles.
+Example: I could be assigned two roles: Saxophone and Sound, which would mean I would alternate between those two roles throughout the duration of the plan.
 
 
 #### Adding more roles to a plan

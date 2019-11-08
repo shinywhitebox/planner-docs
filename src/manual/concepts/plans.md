@@ -5,7 +5,7 @@ tags:
 ---
 {%section "Plans" %}
 
-*Plans* glue *People*, *Roles* and a time period together, to form a roster / schedule. This is where the fun happens :)
+*Plans* are the glue that holds *People*, *Roles* and a time period together. A plan is used to generate a roster/schedule. It's also where all the cool stuff happens :)
 
 ### How it works
 
@@ -13,7 +13,7 @@ A *Plan* is really just a defined date range. This date range is the period that
 
 In order to create a roster you need people right? So *plans* contain people.
 
-People also do *stuff*. So within the plan you assign roles to people.
+People also do *stuff*. So within the plan you assign *roles* to people.
 
 {{app.name}} does the rest :)
 
@@ -23,9 +23,9 @@ People also do *stuff*. So within the plan you assign roles to people.
 
 Plans are added through the *Menu|Plans* page. 
 
-To add a new plan: Click the + button on the top right. You'll enter the new plan editor immediately. Plans are given a default duration of three months and repeat weekly.
+To add a new plan: Click the + button on the top right. You'll enter the new plan editor immediately. Plans start with a default duration of three months and repeat weekly.  If you want to change the day on which the plan repeats; change it's *start date*.
 
-A plan has its own local copy of the roles and ordering. When a plan is created it uses the ordering defined in the global role data.
+A plan has its own local copy of the roles and ordering. When a plan is created it makes a copy of the ordering defined by the {%link "global roles" "concepts/roles" %}.
 
 ##### Tips
 

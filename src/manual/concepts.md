@@ -1,7 +1,7 @@
 ---
 title: "Concepts"
 submenuOrder:
-    - global
+    - a-word
     - roles
     - people
     - plans
@@ -22,7 +22,7 @@ At the very least; getting an understanding of what we mean when we use the term
 
 ### Organizations
 
-Everything about your plans, people and roles are held by an *Organization*. Think of this as a container for all "the stuff". Organizations start with randomly generated names, which can be changed later.
+Everything about your plans, people and roles are held by an *Organization*. Think of this as a container for all "the stuff". Organizations start with a randomly generated name, which can be changed later.
 
 
 ### Plans
@@ -33,14 +33,16 @@ The general idea is:
 
 1. You define a *Plan* to represent a recurring event (like a show). 
 1. The plan spans some amount of time that isn't too long, say three months.  
-1. People are added to the plan in various roles
-1. {{app.name}} does it's thing and gives you the final result.
+1. People are added to the plan in various roles.
+1. {{app.name}} works out who is doing what when; fairly. The result can be viewed in the app or exported to a sheet.
 
 {% warning "Note" "At present the app will happily assign people to multiple plans. This means it is possible to try to put someone on two different events at the same time (probably not what you want).<p> This will be addressed in a future update." %}
 
-#### Role ordering within a Plan
+#### Role ordering 
 
-Ordering is something we will deal with later, but you should know that each plan has a default ordering.  
+Role Ordering is something we will deal with later, but you should understand that roles *are ordered*, and are *processed in that order* when the plans are worked out.  
+
+This is very useful later on.  Don't worry about remembering all this now, just know that role ordering "is a thing".  
 
 e.g: If the ordering of a maintenance plan was:
 
