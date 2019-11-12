@@ -3,10 +3,6 @@ title: "Roadmap"
 tags: 
     - docs
 ---
-# TODO
-
-- Demo: Showing you around my own plan    
-- Howto: Inviting others to the Organization (so they can manage their own unavailability, preferences)
 
 # Roadmap
 
@@ -18,3 +14,8 @@ This is a very rough guide of current intended work. Don't think what's in here 
 1. Per plan availability / unavailability
 1. Reworking Desktop UI to be less "mobile" like
 
+
+## Content TODO
+
+- Demo: Showing you around my own plan    
+- Howto: Inviting others to the Organization (so they can manage their own unavailability, preferences)
