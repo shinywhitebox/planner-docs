@@ -17,8 +17,8 @@ The app is available for any device. It requires an internet connection to use.
 The app is available at the respective online appstores.
 
 <div class="row">
-<a class="col" href=""><img class="img-fluid" src="/assets/images/appstore.png"/></a>
-<a class="col" href=""><img class="img-fluid" src="/assets/images/google_play.png"/></a>
+<a class="col" href="https://apps.apple.com/us/app/cunningplan/id1409306981"><img class="img-fluid" src="/assets/images/appstore.png"/></a>
+<a class="col" href="https://play.google.com/store/apps/details?id=com.shinywhitebox.scheduler"><img class="img-fluid" src="/assets/images/google_play.png"/></a>
 </div>
 
 ### Browser {.h2 .mt-4}
