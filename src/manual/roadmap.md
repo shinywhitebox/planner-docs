@@ -5,10 +5,8 @@ tags:
 ---
 # TODO
 
-- Fill in Advanced 
-- Fill in Howto 
-- Fill in Examples
-- Fill in Limitations
+- Demo: Showing you around my own plan    
+- Howto: Inviting others to the Organization (so they can manage their own unavailability, preferences)
 
 # Roadmap
 

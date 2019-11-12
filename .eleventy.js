@@ -129,10 +129,9 @@ module.exports = function (eleventyConfig) {
         }
         return `
 <span class="p-1">
-<div class="border rounded border-secondary p-2">
-<div class="embed-responsive embed-responsive-16by9">
-<img class="embed-responsive-item" src="${url}"/>
-</div><div class="text-center">${theTitle}</div></div></span>`;
+<div class="border rounded border-secondary p-2 text-center">
+<img class="col-12" src="${url}"/>
+</div><div class="text-center">${theTitle}</div></span>`;
     });
 
     eleventyConfig.addShortcode('tip', function (title, text) {

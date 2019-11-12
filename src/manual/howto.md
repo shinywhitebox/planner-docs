@@ -18,9 +18,4 @@ This section shows how to perform various specific tasks in {{app.name}}
 {%-endfor %}
 </ol>
 
-# TODO
 
-- Change your organization name
-- Invite others
-- Deleting things (swipe left)
-- Duplicating 

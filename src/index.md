@@ -8,7 +8,7 @@ tags:
 
 In these scenarios you have a number of people, able to do perform one or more roles, with dynamic and varying availability, and you need a way to come up with a roster / schedule / plan for those people for, say, three months. 
 
-{%info "Lets avoid pain" "If you've ever tried to create a roster in sheets/excel for 30 odd people. You know how much fun it <b>isn't</b>."%}
+{%info "Lets avoid pain" "If you've ever tried to create a roster in sheets/excel for 30 odd people, you know how much fun it <b>isn't</b>."%}
 
 {{app.name}}, in a nutshell, will let you put those people into various roles, defines rules, vacation times and so forth and come up with a fair plan out the other end. In short it takes all the pain away from creating rosters in google sheets / excel.
 
