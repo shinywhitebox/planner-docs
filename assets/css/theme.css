@@ -6978,7 +6978,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #e7e9ed; } }
 
 /*************************** Theme Styles Section ****************************/
-/*!  
+/*!
  * CoderDocs - Bootstrap 4 Documentation Template for Software Projects
  * Version: 1.0
  * Author: Xiaoying Riley
@@ -7208,7 +7208,7 @@ a.theme-link {
 
 /* Header */
 .site-logo .logo-text {
-  color: #252930;
+  color: white;
   font-size: 1.5rem;
   font-weight: bold; }
 

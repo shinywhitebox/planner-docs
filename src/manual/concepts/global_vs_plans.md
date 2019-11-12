@@ -3,19 +3,19 @@ title: "A word on 'data'"
 tags: 
     - docs-concepts
 ---
-{%section "Global Data / Plan Data" %}
+{%section "Shared Data / Per-Plan Data" %}
 
 Information is split into two parts in {{app.name}}.
 
-1. Global (people / roles)
+1. Shared (people / roles)
 1. Per plan 
 
-The split exists so that if people are in multiple plans, you don't have to duplicate their details across those plans.  If I put myself into a band and also onto a management team; my details are *global*, they are shared between every plan.  
+The split exists so that if people are in multiple plans, you don't have to duplicate their details across those plans.  If I put myself into a band and also onto a management team; my details are *shared* or *global*, they are shared between every plan.  
 {%endsection%}
 
-{%section "Global Data" %}
+{%section "Shared Data" %}
 
-The following things are global:
+The following things are shared:
 
 #### People
 As you'd imagine, each person defines someone that can be placed into a plan. Each *person* has the following fields:
@@ -25,9 +25,7 @@ As you'd imagine, each person defines someone that can be placed into a plan. Ea
 - Unavailability (aka: vacation)
 
 #### Roles
-A role is essentially a name, along with some properties that affect its usage within a plan.  
-
-While roles are defined globally, a plan doesn't have to contain all roles.
+A role is essentially a name, along with some properties that affect its usage within a plan. While roles are defined globally, a plan doesn't have to contain all roles.
  
 Roles have the following fields:
 - Name
