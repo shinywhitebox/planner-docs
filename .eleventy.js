@@ -134,64 +134,45 @@ module.exports = function (eleventyConfig) {
 </div><div class="text-center">${theTitle}</div></span>`;
     });
 
-    eleventyConfig.addShortcode('tip', function (title, text) {
+    function generateCalloutBlock(type, icon, title, text) {
         return `
-<div class="callout-block callout-success">
-    <div class="icon-holder">
-        <i class="fas fa-thumbs-up"></i>
-    </div>
+<div class="callout-block callout-block-${type}">
     <div class="content">
-        <h4 class="callout-title">${title}</h4>
+        <h4 class="callout-title">
+            <span class="callout-icon-holder mr-1"><i class="fas fa-${icon}"></i></span>
+            ${title}
+        </h4>
         <p>${text}</p>
     </div>
 </div>
 `;
+    }
+
+    eleventyConfig.addShortcode('tip', function (title, text) {
+        return generateCalloutBlock('success', 'thumbs-up', title, text);
     });
 
     eleventyConfig.addShortcode('info', function (title, text) {
-        return `
-<div class="callout-block callout-info">
-    <div class="icon-holder">
-        <i class="fas fa-info-circle"></i>
-    </div>
-    <div class="content">
-        <h4 class="callout-title">${title}</h4>
-        <p>${text}</p>
-    </div>
-</div>
-`;
+        return generateCalloutBlock('info', 'info-circle', title, text);
     });
 
     eleventyConfig.addShortcode('warning', function (title, text) {
-        return `
-<div class="callout-block callout-danger">
-    <div class="icon-holder">
-        <i class="fas fa-bug"></i>
-    </div>
-    <div class="content">
-        <h4 class="callout-title">${title}</h4>
-        <p>${text}</p>
-    </div>
-</div>
-`;
+        return generateCalloutBlock('warning', 'bug', title, text);
     });
 
     eleventyConfig.addPairedShortcode('section', function (content, title, id) {
         if (title) {
             return `
-<section id="${id}" class="doc-section">
-<h2 class="section-title">${title}</h2>
-<div class="section-block">
+<header class="docs-header" id="${id}">
+<h5 class="docs-heading">${title}</h5>
+</header>
 ${content}
-</div>
-</section>
 `;
         } else {
             return `
-<section id="${id}" class="doc-section">
-<div class="section-block">
+<header class="docs-header" id="${id}">
+</header>
 ${content}
-</section>
 `;
         }
     });

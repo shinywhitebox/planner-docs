@@ -12,7 +12,7 @@ submenuOrder:
 
 The app is available for any device. It requires an internet connection to use. 
 
-### iOS & Android {.section-block} 
+### iOS & Android {.h2} 
 
 The app is available at the respective online appstores.
 
@@ -21,7 +21,7 @@ The app is available at the respective online appstores.
 <a class="col" href=""><img class="img-fluid" src="/assets/images/google_play.png"/></a>
 </div>
 
-### Browser {.section-block}
+### Browser {.h2 .mt-4}
 
 You can access the app via your browser, here: {{app.appurl}}
 
