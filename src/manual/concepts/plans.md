@@ -44,6 +44,6 @@ A new plan will be created that follows on from the previous. By default, it wil
 
 You can delete a plan by swiping left, and clicking the 'Delete' button that appears.
 
-{%warning "Note" "You cannot remove a plan that is being used, or is published" %}
+{%info "Note" "You cannot remove a plan that is being used, or is published" %}
 
 {%endsection%}

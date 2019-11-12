@@ -8,6 +8,7 @@ submenuOrder:
     - roles-in-plans
     - rules
     - publishing
+    - shar
     - availability
     - teams
     - inviting
@@ -36,7 +37,7 @@ The general idea is:
 1. People are added to the plan in various roles.
 1. {{app.name}} works out who is doing what when; fairly. The result can be viewed in the app or exported to a sheet.
 
-{% warning "Note" "At present the app will happily assign people to multiple plans. This means it is possible to try to put someone on two different events at the same time (probably not what you want).<p> This will be addressed in a future update." %}
+{% info "Note" "At present the app will happily assign people to multiple plans. This means it is possible to try to put someone on two different events at the same time (probably not what you want).<p> This will be addressed in a future update." %}
 
 #### Role ordering 
 

@@ -122,6 +122,19 @@ module.exports = function (eleventyConfig) {
 </div><p></p>`;
     });
 
+    eleventyConfig.addShortcode('image', function (title, url) {
+        var theTitle = "";
+        if(title.length > 0) {
+            theTitle = '<p>' + title + '</p>';
+        }
+        return `
+<span class="p-1">
+<div class="border rounded border-secondary p-2">
+<div class="embed-responsive embed-responsive-16by9">
+<img class="embed-responsive-item" src="${url}"/>
+</div><div class="text-center">${theTitle}</div></div></span>`;
+    });
+
     eleventyConfig.addShortcode('tip', function (title, text) {
         return `
 <div class="callout-block callout-success">
@@ -152,7 +165,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addShortcode('warning', function (title, text) {
         return `
-<div class="callout-block callout-warning">
+<div class="callout-block callout-danger">
     <div class="icon-holder">
         <i class="fas fa-bug"></i>
     </div>

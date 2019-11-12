@@ -35,5 +35,5 @@ At present the app is in beta, and made freely available to anyone that wants to
 
 We've tried to put as much useful information into the docs such that you should only need to engage paid support if you're really stuck or want to implement a custom scenario. 
 
-One-on-one support via our professional services.  Please get in touch with [shinywhitebox](mailto:support@shinywhitebox.com?subject=I'd%20like%20to%20discuss%20professional%20services%20for%20{{app.name}}) and we can discuss your requirements and how to best help you solve them.
+For one-on-one support pricing via our professional services, please get in touch with [shinywhitebox](mailto:support@shinywhitebox.com?subject=I'd%20like%20to%20discuss%20professional%20services%20for%20{{app.name}}) and we can discuss your requirements and how to best help you solve them.
 {%endsection%}
