@@ -11,8 +11,23 @@ This is a very rough guide of current intended work. Don't think what's in here 
 ## Next planned work
 
 1. Management of Exceptions (people being unavailable short term; swapping people)
-1. Per plan availability / unavailability
-1. Reworking Desktop UI to be less "mobile" like
+
+The above is a big task in my mind: it combines not only the ability to do such a thing; but a nice UI to wrap it all, meaning I'm going to rewrite the "share full" page. 
+
+
+## Future
+
+In no particular order...
+
+- Settings page, including settings for:
+    - Per plan availability / unavailability
+    - Reworking Desktop UI to be less "mobile" like
+- Automatically deleting irrelevant unavailability dates
+- Date formatting options
+- Name display options (first/last, last first)
+- Better onboarding experience
+- Link to docs from inside the app
+- Better invite method
 
 
 ## Content TODO
