@@ -46,4 +46,16 @@ The order that the roles appear in can be changed by clicking the *Edit* button 
 
 Layout order is specified per role. To change it, click the role itself and make the change inside the role editor.
 
+#### Removing a role from a person
+
+People are assigned roles when they are part of a Plan, so to remove a role from a person:
+
+1. First, go to the Plan that they are part of.
+1. Find the person in that plan, and click/tap on them
+1. Under their 'roles' heading; swipe left to show the delete button
+1. Press DELETE to remove them from that roles
+
+{%image "Deleting a Role" "/assets/images/roles/delete-a-role.png" %}
+
+
 {%endsection%}
