@@ -1,12 +1,21 @@
 ---
-title: "Layout Ordering"
+title: "Layout Priority"
 tags: 
     - docs-advanced
 ---
 
 {%section "What is layout ordering?" %}
 
-Layout Order is a way to force sections (columns, if you like) of the plan to be laid out **before other sections**. In effect; layout order is like grouping. Roles with higher layout orders are laid out before those with lower order numbers.
+Layout Order is a way to force some roles to be laid out completely, before other roles are considered at all.
+In other words; it's a way to specify priority when laying out roles. 
+You can think of *Layout order* like groups. Roles with higher layout orders are laid out before those with lower order numbers.
+
+e.g:
+- Consider two roles; *Manager* and *Worker*
+- You would place *Manager* in layout order 2 and *Worker* in layout order 1, because you cannot have Workers without Managers.  
+
+Higher numbers win. 2 > 1, so whatever is in group 2 is laid out before group 1.  
+If you had a group with layout order of 3, it would be laid out before group 2.   
 
 Here's an example showing the layout order for our introductory demo:
 
