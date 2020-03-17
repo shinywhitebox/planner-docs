@@ -47,16 +47,17 @@ This is very useful later on.  Don't worry about remembering all this now, just 
 
 e.g: If the ordering of a maintenance plan was:
 
-1. Inspection
+1. Inspection 
 1. Cleaning
 1. Compliance 
 
-Then *Inspection* will always be filled first, followed by *Cleaning* and finally *Compliance*.
+Where *Inspection* has the highest priority, then *Inspection* will always be filled first, followed by *Cleaning* and finally *Compliance*.
 
-The key point is that these orderings define a natural priority. Because *Inspection* is first, people in the *Inspection* role are treated preferentially to everyone else. 
+The key point is that role orderings define a natural priority. Because *Inspection* is first, people in the *Inspection* role are treated preferentially to everyone else. 
 
-This can be changed in *Menu | Plans | Plan | Roles & Ordering* 
+Role Ordering can altered from the Plan Details page, which is found at: *Menu | Plans | Plan | Roles & Ordering*.
 
+For more detail see {% link "roles" "concepts/roles" %}
 
 {%endsection%}
 

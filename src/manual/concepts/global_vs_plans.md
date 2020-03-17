@@ -3,14 +3,19 @@ title: "A word on 'data'"
 tags: 
     - docs-concepts
 ---
-{%section "Shared Data / Per-Plan Data" %}
+{%section "How Data is Managed" %}
 
 Information is split into two parts in {{app.name}}.
 
-1. Shared (people / roles)
+1. Shared (e.g: people & roles) 
 1. Per plan 
 
-The split exists so that if people are in multiple plans, you don't have to duplicate their details across those plans.  If I put myself into a band and also onto a management team; my details are *shared* or *global*, they are shared between every plan.  
+*Shared data* is owned by the organization. *'Per plan'* data is associated with each plan.   
+
+The split exists so that if people are in multiple plans, you don't have to duplicate their details across those plans.  If I put myself into a band and also onto a management team; my details are *shared* or *global*, they are shared between every plan.
+
+For example, a person's unavailability is shared across multiple plans. It's set once on the person, and then used in multiple places.
+  
 {%endsection%}
 
 {%section "Shared Data" %}
@@ -25,7 +30,12 @@ As you'd imagine, each person defines someone that can be placed into a plan. Ea
 - Unavailability (aka: vacation)
 
 #### Roles
-A role is essentially a name, along with some properties that affect its usage within a plan. While roles are defined globally, a plan doesn't have to contain all roles.
+A role describes a task or activity that needs doing within a Plan.  Roles are filled by people, and they can be optional.
+
+Examples roles:
+- Speaker (you may have a set of speakers that rotate through this duty across some number of events)
+- Cooking (you might put together a flat roster; and this role would indicate who's cooking tonight)
+- Setup (you might have minimum of two, maximum of three people setting up a stage)
  
 Roles have the following fields:
 - Name
@@ -34,13 +44,9 @@ Roles have the following fields:
 
 {%endsection%}
 
-{%section "Plan Data" %}
+{%section "Plan Mode: Draft & Published" %}
 
-Pretty much everything else ends up in the Plan. That includes all the scheduling for that plan.
-
-Think of a *plan* as being the container, or the end result, of mixing up people & roles over some date range. It's where the results of the scheduling/rostering are stored.  
-
-Plans can be in *draft* or *published* mode. The intention is that a draft plan is something being worked on, something that is in flux and certianly not yet finalized.  
+Plans can be in *draft* or *published* mode. The intention is that a draft plan is something being worked on, something that is in flux and certainly not yet finalized.  
 
 A *published* plan on the other hand is done, and becomes read-only at the time it is published.  The rationale is that if people have committed to being in that plan; you don't want the system potentially reworking it (perhaps quite dramatically) based on some changes to peoples availability or vacation dates later on.  You want published plans to stay fixed in place.  
 

@@ -35,6 +35,6 @@ To use the app, you need to create an account.  You can do that either via the a
 {%video "https://www.youtube.com/embed/V11aZsHhTu8" %}
 
 ### Privacy 
-Your account information can only be changed by you. It can be seen by other members of your organization (i.e: anyone else that your have invited to look at your plans)
+Your account information can only be changed by you. It can be seen by other members of your organization (i.e: anyone else that you have invited to look at your plans)
 
 {%endsection%}
