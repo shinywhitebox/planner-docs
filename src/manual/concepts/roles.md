@@ -5,7 +5,7 @@ tags:
 ---
 {%section "Roles" %}
 
-When considering the creation of a roster; people are slotted/put/assigned into *Roles*. In {{app.name}} there's no way to place someone into a roster without them being assigned to a role.
+When considering the creation of a roster; people are assigned into *Roles*. In {{app.name}} there's no way to place someone into a roster without them being assigned to a role.
 
 
 ### Global Roles
@@ -51,9 +51,9 @@ Layout order is specified per role. To change it, click the role itself and make
 People are assigned roles when they are part of a Plan, so to remove a role from a person:
 
 1. First, go to the Plan that they are part of.
-1. Find the person in that plan, and click/tap on them
-1. Under their 'roles' heading; swipe left to show the delete button
-1. Press DELETE to remove them from that roles
+1. Find the person in that plan, and click/tap on them.
+1. Under their 'roles' heading; swipe left to show the delete button.
+1. Press DELETE to remove them from that role.
 
 {%image "Deleting a Role" "/assets/images/roles/delete-a-role.png" %}
 

@@ -16,7 +16,7 @@ To share to Google Sheets:
 - Select a sheet to share to (it must exist already)
 - Select a tab within the to share to
 
-{%info "Desktop Only" "At the moment; sharingn is only possible from a desktop browser version of the app. "%}
+{%info "Desktop Only" "At the moment; sharing is only possible from a desktop browser version of the app. "%}
 
 {%warning "Careful!" "Sharing will overwrite everything in the selected sheet. Make sure you've selected the right one!"%}
 

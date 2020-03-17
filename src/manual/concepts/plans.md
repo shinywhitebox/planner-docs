@@ -5,7 +5,7 @@ tags:
 ---
 {%section "Plans" %}
 
-*Plans* are the glue that holds *People*, *Roles* and a time period together. A plan is used to generate a roster/schedule. It's also where all the cool stuff happens :)
+*Plans* are the glue that hold *People*, *Roles* and a time period together. A plan is used to generate a roster/schedule. It's also where all the cool stuff happens :)
 
 ### How it works
 
