@@ -10,7 +10,7 @@
   "author": "Neil Clayton",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.2",
     "markdown-it-attrs": "^3.0.2",
     "moment": "^2.24.0",
     "safe-json-stringify": "^1.2.0",
